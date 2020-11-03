@@ -15,7 +15,7 @@ public class FirstTestCase{
         driver.get("https://phptravels.com/demo/");
         String actualTitle = "Demo Script Test drive - PHPTRAVELS";
         Assert.assertEquals(driver.getTitle(), actualTitle);
-        WebElement file = driver.findElement(By.xpath("/html/body/header/div/a/img"));
+        WebElement file = driver.findElement(By.id("icon"));
         if (file.isDisplayed()) {
             System.out.println("Image displayed.");
         } else {
